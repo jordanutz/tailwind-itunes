@@ -1,0 +1,11 @@
+/*
+
+- To avoid potential duplication issues, Tailwind provides @apply directive, which can be used to compose a group of utilities into a reusuable component class. 
+- Useful feature when you want to extract repeated combinations of utility classes, but cautioned. 
+- Most useful for individual form elements and buttons, which are more repeated throughout and single HTML tags.
+
+*/ 
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
