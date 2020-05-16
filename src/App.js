@@ -37,15 +37,15 @@ function App() {
           <input type="text" className="mb-4 w-full border border-gray-400 border-solid rounded-sm px-3 py-1" placeholder="Search" />
         </section>
         <section className="py-3 border-b text-gray-900">
-          <section className="menu__menu-item">
+          <section className="menu__menu-item hover:text-gray-700">
             <AiFillHeart className="menu__menu-icon bg-brand-blue" />
             For You
           </section>
-          <section className="menu__menu-item">
+          <section className="menu__menu-item hover:text-gray-700">
             <IoIosMusicalNotes className="menu__menu-icon bg-brand-blue" />
             Browse
           </section>
-          <section className="menu__menu-item">
+          <section className="menu__menu-item hover:text-gray-700">
             <IoIosRadio className="menu__menu-icon bg-brand-blue" />
             Radio
           </section>
@@ -66,7 +66,7 @@ function App() {
           <section className="col-span-4 lg:col-span-1">
             <img className="rounded-md shadow-xl mx-auto mb-6 lg:mb-0" src="https://media.pitchfork.com/photos/5929bb44abf31b7dc7155a53/1:1/w_320/bb6b528d.jpg" alt="Shura - Nothing's Real" />
           </section>
-          <section className="col-span-4 lg:col-span-3 lg:pl-8 lg:pr-32 overflow-y-scroll md:h-tracks xl:h-tracks">
+          <section className="col-span-4 pb-24 lg:col-span-3 lg:pb-0 lg:pl-8 lg:pr-32 xl:h-tracks xl:overflow-y-scroll">
             <h2 className="font-bold text-2xl text-gray-900">Nothing's Real</h2>
             <h3 className="font-bold text-xl mb-1 text-brand-blue">Shura</h3>
             <section className="mb-3">
