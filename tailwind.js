@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       colors: {
         'bg-menu': '#f5f5f5',
-        'brand-blue': '#0363F7'
+        'brand-blue': '#0363F7', 
+        'active-blue': '#0024B6'
       }, 
       height: {
         'tracks': '70vh'
@@ -632,6 +633,8 @@ module.exports = {
       '1000': '1000ms',
     },
   },
+  // Some classes are disabled to save on default fize, but variants can be enabled. Variants is a term used to refer to any pseudo-element property, such as focus, active, hover. Whenever you specif the variants to enabled for a specific utility, you need to specify all variants and not just extra ones you want to enable. Order of variants matter. 
+
   variants: {
     accessibility: ['responsive', 'focus'],
     alignContent: ['responsive'],
@@ -639,7 +642,7 @@ module.exports = {
     alignSelf: ['responsive'],
     appearance: ['responsive'],
     backgroundAttachment: ['responsive'],
-    backgroundColor: ['responsive', 'hover', 'focus'],
+    backgroundColor: ['responsive', 'hover', 'focus', 'active'],
     backgroundOpacity: ['responsive', 'hover', 'focus'],
     backgroundPosition: ['responsive'],
     backgroundRepeat: ['responsive'],
@@ -647,7 +650,7 @@ module.exports = {
     borderCollapse: ['responsive'],
     borderColor: ['responsive', 'hover', 'focus'],
     borderOpacity: ['responsive', 'hover', 'focus'],
-    borderRadius: ['responsive'],
+    borderRadius: ['responsive, hover'],
     borderStyle: ['responsive'],
     borderWidth: ['responsive'],
     boxShadow: ['responsive', 'hover', 'focus'],
@@ -699,7 +702,7 @@ module.exports = {
     strokeWidth: ['responsive'],
     tableLayout: ['responsive'],
     textAlign: ['responsive'],
-    textColor: ['responsive', 'hover', 'focus'],
+    textColor: ['responsive', 'hover', 'focus', 'group-hover'],
     textOpacity: ['responsive', 'hover', 'focus'],
     textDecoration: ['responsive', 'hover', 'focus'],
     textTransform: ['responsive'],

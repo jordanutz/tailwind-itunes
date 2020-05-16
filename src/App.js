@@ -60,19 +60,19 @@ function App() {
       </aside>
       <section className="col-span-9 px-8 py-3">
         <header className="flex items-end justify-end mb-16">
-          <button className="text-sm bg-brand-blue rounded-md px-5 py-1 text-white shadow-md">Sign In</button>
+          <button className="text-sm bg-brand-blue rounded-md px-5 py-1 text-white shadow-md focus:outline-none focus:shadow-outline">Sign In</button>
         </header>
         <main className="grid grid-cols-4 px-2">
           <section className="col-span-1 sticky">
             <img className="rounded-md shadow-xl" src="https://media.pitchfork.com/photos/5929bb44abf31b7dc7155a53/1:1/w_320/bb6b528d.jpg" alt="Shura - Nothing's Real" />
           </section>
-          <section className="col-span-3 pl-6 pr-32 overflow-y-scroll h-tracks">
-            <h2 className="font-bold text-2xl text-gray-700">Nothing's Real</h2>
-            <h3 className="font-bold text-xl mb-1">Shura</h3>
+          <section className="col-span-3 pl-8 pr-32 overflow-y-scroll h-tracks">
+            <h2 className="font-bold text-2xl text-gray-900">Nothing's Real</h2>
+            <h3 className="font-bold text-xl mb-1 text-brand-blue">Shura</h3>
             <section className="mb-3">
               <h4 className="text-xs text-gray-600"><span className="uppercase">Electronic</span> • 2016</h4>
             </section>
-            <button className="mb-4 btn">Preview</button>
+            <button className="mb-4 btn focus:outline-none focus:shadow-outline active:bg-active-blue">Preview</button>
             <section className="mb-6">
               <p className="text-xs">
                 <span className="text-gray-700 font-bold">Editors' Notes: </span>
@@ -81,13 +81,13 @@ function App() {
             </section>
             <section>
               {tracks.map( (track,index, arr) => (
-                <section className={`flex justify-between px-3 py-5 text-sm items-center cursor-pointer border-t ${track.id === arr.length && 'border-b'}`} key={track.id}>
+                <section className={`group flex justify-between px-3 py-5 text-sm items-center cursor-pointer border-t ${track.id === arr.length && 'border-b'} hover:bg-brand-blue hover:text-white active:bg-brand-blue hover:rounded-md`} key={track.id}>
                   <section className="flex items-center">
-                    <p className="mr-5 text-xs text-gray-600">{track.id}</p>
+                    <p className="mr-5 text-xs text-gray-600 group-hover:text-white">{track.id}</p>
                     <h5>{track.title}</h5>
                   </section>
                   <section>
-                    <p className="text-xs text-gray-600">{track.time}</p>
+                    <p className="text-xs text-gray-600 group-hover:text-white">{track.time}</p>
                   </section>
                 </section>
               ))}
