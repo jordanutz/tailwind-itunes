@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div className="App grid grid-cols-11 h-screen relative">
-      <aside className="menu bg-bg-menu col-span-2 border-r border-gray-400 border-solid px-6 py-2">
+      <aside className="hidden md:block menu bg-bg-menu md:col-span-4 lg:col-span-2 border-r border-gray-400 border-solid px-6 py-2">
         <section className="mb-4 cursor-pointer">
           <h1 className="flex items-center text-2xl font-bold">
             <AiFillApple className="text-2xl" />
@@ -58,15 +58,15 @@ function App() {
           </p>
         </section>
       </aside>
-      <section className="col-span-9 px-8 py-3">
-        <header className="flex items-end justify-end mb-16">
+      <section className="col-span-11 md:col-span-7 lg:col-span-9 px-8 py-3">
+        <header className="flex items-end justify-end mb-8 lg:mb-16">
           <button className="text-sm bg-brand-blue rounded-md px-5 py-1 text-white shadow-md focus:outline-none focus:shadow-outline">Sign In</button>
         </header>
         <main className="grid grid-cols-4 px-2">
-          <section className="col-span-1 sticky">
-            <img className="rounded-md shadow-xl" src="https://media.pitchfork.com/photos/5929bb44abf31b7dc7155a53/1:1/w_320/bb6b528d.jpg" alt="Shura - Nothing's Real" />
+          <section className="col-span-4 lg:col-span-1">
+            <img className="rounded-md shadow-xl mx-auto mb-6 lg:mb-0" src="https://media.pitchfork.com/photos/5929bb44abf31b7dc7155a53/1:1/w_320/bb6b528d.jpg" alt="Shura - Nothing's Real" />
           </section>
-          <section className="col-span-3 pl-8 pr-32 overflow-y-scroll h-tracks">
+          <section className="col-span-4 lg:col-span-3 lg:pl-8 lg:pr-32 overflow-y-scroll md:h-tracks xl:h-tracks">
             <h2 className="font-bold text-2xl text-gray-900">Nothing's Real</h2>
             <h3 className="font-bold text-xl mb-1 text-brand-blue">Shura</h3>
             <section className="mb-3">
@@ -94,13 +94,13 @@ function App() {
             </section>
           </section>
         </main>
-        <footer className="fixed bottom-0 right-0 left-0 flex justify-between px-8 bg-brand-blue py-4 items-center text-white shadow-2xl">
-          <section>
+        <footer className="fixed bottom-0 right-0 left-0 flex flex-col md:flex-row md:justify-between px-8 bg-brand-blue py-4 items-center text-white shadow-2xl">
+          <section className="text-center md:text-left">
             <h6 className="font-bold">Get 60 millon songs free for 3 months.</h6>
             <p className="text-sm font-light">Plus your entire music library on all your devices. 3 months free, then $9.99/month.</p>
           </section>
           <section>
-            <button className="bg-white text-brand-blue px-6 rounded-sm py-1 text-sm">Try It Free</button>
+            <button className="hidden md:block bg-white text-brand-blue px-6 rounded-sm py-1 text-sm">Try It Free</button>
           </section>
         </footer>
       </section>
