@@ -5,6 +5,16 @@ module.exports = {
   important: false,
   separator: ':',
   theme: {
+    // Merge with default values. Preferred method of customizing your design system, as it won't override all existing properties belonging to that object. If any changes are made, you must rebuild. 
+    extend: {
+      colors: {
+        'bg-menu': '#f5f5f5',
+        'brand-blue': '#0363F7'
+      }, 
+      height: {
+        'tracks': '85vh'
+      }
+    },
     screens: {
       sm: '640px',
       md: '768px',
@@ -14,7 +24,6 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-
       black: '#000',
       white: '#fff',
 
