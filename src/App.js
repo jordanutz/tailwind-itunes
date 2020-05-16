@@ -79,7 +79,7 @@ function App() {
                 Pop that’s both understated and immediate, from a rising singer/songwriter. On her long-awaited debut, Shura weaves together elegant, intricately patterned electro-pop that channels late-‘80s Madonna (“What’s It Gonna Be?”), Janet Jackson (“Indecision”), and more. Though it has the grand sweep and melodic goods of a major breakthrough,  also bears the subtle flourishes (and song titles) of a reticent, deeply introspective mind.
               </p>
             </section>
-            <section className="pb-24">
+            <section>
               {tracks.map( (track,index, arr) => (
                 <section className={`flex justify-between px-3 py-5 text-sm items-center cursor-pointer border-t ${track.id === arr.length && 'border-b'}`} key={track.id}>
                   <section className="flex items-center">

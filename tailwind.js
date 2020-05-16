@@ -12,7 +12,7 @@ module.exports = {
         'brand-blue': '#0363F7'
       }, 
       height: {
-        'tracks': '85vh'
+        'tracks': '70vh'
       }
     },
     screens: {
